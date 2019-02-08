@@ -18,7 +18,7 @@ RUN { \
 echo '#!/bin/bash'; \
 echo 'set -e'; \
 echo 'cd /opt/ChatScript'; \
-echo './BINARIES/LinuxChatScript64'; \
+echo './BINARIES/LinuxChatScript64 $@'; \
 } > /entrypoint-chatscript.sh \
 && chmod +x /entrypoint-chatscript.sh
 
